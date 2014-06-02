@@ -1,12 +1,13 @@
-name             'spr_selenium_grid'
+name             'spr_selenium'
 maintainer       'Springer Platform Engineering'
 maintainer_email 'platform-engineering@springer.com'
 license          'All rights reserved'
-description      'Installs/Configures Selenium'
+description      'Installs/Configures Selenium dependencies (firefox, chrome, xvfb) and grid'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version          '0.1.1'
+
+depends "yum", "~> 3.2.0"
 
 supports 'debian'
 supports 'ubuntu'
 
-depends 'spr_xvfb', '~> 0.3.0'

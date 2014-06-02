@@ -1,11 +1,8 @@
 DEPENDENCIES
   docker
-  spr_selenium_grid
+  spr_selenium
     path: .
     metadata: true
-  spr_xvfb
-    git: https://github.com/SpringerPE/chef_spr_xvfb.git
-    revision: 0ba094e2420e712a4c56591e73e97bb6193a95b0
 
 GRAPH
   apt (2.4.0)
@@ -48,10 +45,8 @@ GRAPH
     build-essential (>= 0.0.0)
     yum (~> 3.0)
     yum-epel (>= 0.0.0)
-  spr_selenium_grid (0.1.1)
-    spr_xvfb (~> 0.3.0)
-  spr_xvfb (0.3.0)
-    yum (>= 0.0.0)
+  spr_selenium (0.1.1)
+    yum (~> 3.2.0)
   sysctl (0.6.0)
     ohai (>= 0.0.0)
   windows (1.31.0)

@@ -19,6 +19,6 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[spr_selenium_grid::default]
+      - recipe[spr_selenium::default]
     attributes:
 

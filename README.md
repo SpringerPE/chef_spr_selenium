@@ -19,3 +19,7 @@ these in environment configuration files.
 
 ## License (BSD)
 See the LICENSE file for legal information.
+
+## Credits
+
+Based on https://github.com/Quoin/selenium-grid-cookbook

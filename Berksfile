@@ -1,14 +1,11 @@
-site :opscode
+source "http://berkshelf-api.tools.springer-sbm.com"
+source "https://api.berkshelf.com"
 
-cookbook 'selenium-grid', :path => '.'
+metadata
 
-cookbook 'apt'
-cookbook 'xvfb'
-cookbook 'java'
-cookbook 'windows', '1.11.0' #avoiding an annoying powershell dependency when doing linux installs
+cookbook 'spr_xvfb', git: 'https://github.com/SpringerPE/chef_spr_xvfb.git'
 
-#Quoin Cookbooks
-cookbook 'quoin', :git => 'git@bitbucket.org:quoin/quoin-cookbook.git'
-cookbook 'x11vnc', :git => 'git@bitbucket.org:quoin/x11vnc-cookbook.git'
-cookbook 'firefox', :git => 'git@bitbucket.org:quoin/firefox-cookbook.git'
+group :integration do
+	cookbook 'docker'
+end
 
